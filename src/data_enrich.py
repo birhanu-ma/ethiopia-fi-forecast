@@ -98,28 +98,6 @@ class DataEnrichment:
             logging.error(f"Enrichment failed: {e}")
             print(f"❌ Enrichment Error: {e}")
 
-    def save_to_csv(self, filename="ethiopia_fi_enriched.csv"):
-        """
-        Saves the enriched dataset to CSV safely.
-
-        Parameters:
-        - filename (str): Output CSV name
-        """
-
-        try:
-            if not filename.endswith(".csv"):
-                raise ValueError("Filename must end with .csv")
-
-            # Save without index to preserve record_id column integrity
-            self.df.to_csv(filename, index=False)
-
-            print(f"✅ File saved successfully as: {filename}")
-            logging.info(f"File saved successfully: {filename}")
-
-        except Exception as e:
-            logging.error(f"CSV saving failed: {e}")
-            print(f"❌ Save Error: {e}")
-
     def get_summary(self):
         """
         Returns a grouped summary of the dataset by record_type and pillar.
