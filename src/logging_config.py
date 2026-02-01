@@ -5,7 +5,7 @@ import os
 LOG_DIR = os.path.join(os.path.dirname(__file__), "../logs")
 os.makedirs(LOG_DIR, exist_ok=True)
 
-LOG_FILE = os.path.join(LOG_DIR, "eda_enrichment.log")
+LOG_FILE = os.path.join(LOG_DIR, "logging.log")
 
 # Configure logging
 logging.basicConfig(
