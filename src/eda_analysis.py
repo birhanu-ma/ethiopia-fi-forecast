@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from .logging_config import logging 
 
 
 class EdaAnalysis:
@@ -40,6 +41,8 @@ class EdaAnalysis:
         self.df["year"] = pd.to_numeric(self.df["year"], errors="coerce")
 
         print("EDA Class Initialized Successfully")
+        logging.info("EDA Class Initialized Successfully")
+
 
 
     # ==========================================================
@@ -47,6 +50,8 @@ class EdaAnalysis:
     # ==========================================================
     def get_dataset_overview(self):
         print("\n--- Dataset Overview ---\n")
+        logging.info("Dataset Overview")
+
 
         record_summary = self.df['record_type'].value_counts()
         pillar_summary = self.df['pillar'].value_counts()
@@ -168,6 +173,9 @@ class EdaAnalysis:
 
         print("\nGrowth Table:\n")
         print(acc[["year", "value_numeric", "growth_pp"]])
+        logging.info("Growth Table")
+        logging.info("[year, value_numeric, growth_pp]")
+        
 
     # ==========================================================
     # TASK 2.3 Usage vs Registration Gap
@@ -298,6 +306,8 @@ class EdaAnalysis:
 
         print("\n--- Impact Link Summary ---\n")
         print(summary)
+        logging.info("Impact Link Summary")
+        logging.info("Summary")
 # ==========================================================
     # TASK 2.4 Correlation Matrix (Clean, Squared, Readable)
     # ==========================================================
