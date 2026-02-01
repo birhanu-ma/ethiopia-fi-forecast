@@ -21,7 +21,9 @@ Plaintext
 │   └── forecasting.py      # Time-series models (SARIMA/Prophet)
 ├── reports/
 │   └── insights_summary.pdf# Final analysis of the "Access Stagnation"
-├── requirements.txt        # Python dependencies
+├── reports/
+|   ├── figures/
+├── requirements.txt          # Python dependencies
 └── README.md               # You are here
 🚀 Getting Started
 1. Installation
