@@ -1,37 +1,140 @@
 import pandas as pd
+import os
+import sys
+
+# Project root setup
+project_root = os.path.abspath(os.path.join(os.getcwd(), "."))
+sys.path.append(project_root)
+
+from .logging_config import logging
+
 
 class DataEnrichment:
+    """
+    DataEnrichment Class
+
+    Handles:
+    - Adding new financial inclusion records into an existing dataset
+    - Preventing duplicate record IDs
+    - Saving enriched outputs safely
+    - Providing summary statistics
+    """
+
     def __init__(self, df):
-        # FIX: If record_id is the index, move it back to being a column
-        if df.index.name == 'record_id':
-            df = df.reset_index()
-        self.df = df
-        
-        if 'observation_date' in self.df.columns:
-            self.df['observation_date'] = pd.to_datetime(self.df['observation_date'])
+        """
+        Initialize the enrichment object with an existing DataFrame.
+        Includes validation and date conversion.
+        """
+
+        try:
+            if df is None or not isinstance(df, pd.DataFrame):
+                raise ValueError("Input must be a valid pandas DataFrame.")
+
+            # Fix: If record_id is stored as index, reset it back to column
+            if df.index.name == "record_id":
+                df = df.reset_index()
+
+            self.df = df
+
+            # Convert observation_date if available
+            if "observation_date" in self.df.columns:
+                self.df["observation_date"] = pd.to_datetime(
+                    self.df["observation_date"],
+                    errors="coerce"
+                )
+
+            logging.info("DataEnrichment initialized successfully.")
+
+        except Exception as e:
+            logging.error(f"Initialization failed: {e}")
+            raise
 
     def enrich_data(self, new_records_list):
-        new_df = pd.DataFrame(new_records_list)
-        
-        if 'observation_date' in new_df.columns:
-            new_df['observation_date'] = pd.to_datetime(new_df['observation_date'])
-        
-        # FIX: ignore_index=True resets the row numbers (0, 1, 2...) 
-        # but keeps your 'record_id' column safe
-        self.df = pd.concat([self.df, new_df], ignore_index=True)
-        
-        # Clean up duplicates just in case you run the cell twice
-        self.df = self.df.drop_duplicates(subset=['record_id'], keep='last')
-        
-        print(f"--- Enrichment Success ---")
-        print(f"Current Columns: {list(self.df.columns)}")
-        print(f"Total Rows: {len(self.df)}")
+        """
+        Adds new records into the dataset safely.
+
+        Parameters:
+        - new_records_list (list of dicts): New financial inclusion rows
+        """
+
+        try:
+            if new_records_list is None or len(new_records_list) == 0:
+                raise ValueError("New records list is empty or None.")
+
+            if not isinstance(new_records_list, list):
+                raise TypeError("New records must be provided as a list of dictionaries.")
+
+            # Convert new records into DataFrame
+            new_df = pd.DataFrame(new_records_list)
+
+            if new_df.empty:
+                raise ValueError("New DataFrame is empty. No enrichment applied.")
+
+            # Ensure record_id exists
+            if "record_id" not in new_df.columns:
+                raise KeyError("New records must include a 'record_id' field.")
+
+            # Convert observation_date safely
+            if "observation_date" in new_df.columns:
+                new_df["observation_date"] = pd.to_datetime(
+                    new_df["observation_date"],
+                    errors="coerce"
+                )
+
+            # Append new records
+            self.df = pd.concat([self.df, new_df], ignore_index=True)
+
+            # Remove duplicates based on record_id
+            self.df = self.df.drop_duplicates(subset=["record_id"], keep="last")
+
+            # Log success
+            print("\n--- Enrichment Success ---")
+            print(f"Total Records After Enrichment: {len(self.df)}")
+
+            logging.info("Enrichment completed successfully.")
+            logging.info(f"Total Rows After Enrichment: {len(self.df)}")
+
+        except Exception as e:
+            logging.error(f"Enrichment failed: {e}")
+            print(f"❌ Enrichment Error: {e}")
 
     def save_to_csv(self, filename="ethiopia_fi_enriched.csv"):
-        # CRITICAL: index=False ensures we don't save the row numbers
-        # which keeps 'record_id' as your first real column.
-        self.df.to_csv(filename, index=False)
-        print(f"File saved as {filename}")
+        """
+        Saves the enriched dataset to CSV safely.
+
+        Parameters:
+        - filename (str): Output CSV name
+        """
+
+        try:
+            if not filename.endswith(".csv"):
+                raise ValueError("Filename must end with .csv")
+
+            # Save without index to preserve record_id column integrity
+            self.df.to_csv(filename, index=False)
+
+            print(f"✅ File saved successfully as: {filename}")
+            logging.info(f"File saved successfully: {filename}")
+
+        except Exception as e:
+            logging.error(f"CSV saving failed: {e}")
+            print(f"❌ Save Error: {e}")
 
     def get_summary(self):
-        return self.df.groupby(['record_type', 'pillar']).size()
+        """
+        Returns a grouped summary of the dataset by record_type and pillar.
+        """
+
+        try:
+            required_cols = ["record_type", "pillar"]
+
+            for col in required_cols:
+                if col not in self.df.columns:
+                    raise KeyError(f"Missing required column: {col}")
+
+            return self.df.groupby(["record_type", "pillar"]).size()
+
+        except Exception as e:
+            logging.error(f"Summary generation failed: {e}")
+            print(f"❌ Summary Error: {e}")
+            return None
