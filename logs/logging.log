@@ -1,0 +1,64 @@
+2026-02-01 19:40:58 - INFO - Logging Initialized
+2026-02-01 19:40:59 - INFO - load the original dataset from ../data/raw/ 
+2026-02-01 19:40:59 - INFO - InclusionDataProfiler initialized successfully.
+2026-02-01 19:40:59 - INFO - Full profiling suite started.
+2026-02-01 19:40:59 - INFO - Running schema overview...
+2026-02-01 19:40:59 - INFO - Running temporal analysis...
+2026-02-01 19:40:59 - INFO - Observation range: 2014-12-31 00:00:00 to 2025-12-31 00:00:00
+2026-02-01 19:40:59 - INFO - Total Events Cataloged: 10
+2026-02-01 19:40:59 - INFO - Running indicator coverage analysis...
+2026-02-01 19:40:59 - INFO - Running missing value + confidence profiling...
+2026-02-01 19:40:59 - INFO - Impact link review completed successfully.
+2026-02-01 19:40:59 - INFO - Full profiling suite completed successfully.
+2026-02-01 19:40:59 - INFO - ====== SCHEMA & RECORD TYPE SUMMARY ======
+2026-02-01 19:40:59 - INFO - --- Pillar Distribution ---
+2026-02-01 19:40:59 - INFO - ====== TEMPORAL RANGE ======
+2026-02-01 19:40:59 - INFO - ====== INDICATOR COVERAGE ======
+2026-02-01 19:40:59 - INFO - ====== DATA QUALITY (NULLS & CONFIDENCE) ======
+2026-02-01 19:40:59 - INFO - --- Confidence Level Distribution ---
+2026-02-01 19:40:59 - INFO - ====== IMPACT LINK RELATIONSHIPS ======
+2026-02-01 19:41:26 - INFO - Logging Initialized
+2026-02-01 19:41:27 - INFO - load the orginal dataset
+2026-02-01 19:41:27 - INFO - DataEnrichment initialized successfully.
+2026-02-01 19:41:27 - INFO - Adding 26 rows to the dataset (REC_0011 to REC_0036)
+2026-02-01 19:41:27 - INFO - Enrichment completed successfully.
+2026-02-01 19:41:27 - INFO - Total Records: 46
+2026-02-01 19:41:27 - INFO - DataEnrichment initialized successfully.
+2026-02-01 19:41:27 - INFO - Adding impact links: IMP_0015 to IMP_0016 (2 links total)
+2026-02-01 19:41:27 - INFO - Enrichment completed successfully.
+2026-02-01 19:41:27 - INFO - Total Records: 16
+2026-02-01 19:41:27 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-01 19:41:27 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-01 19:41:47 - INFO - Logging Initialized
+2026-02-01 19:42:08 - INFO - Dataset loaded successfully from: ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-01 19:42:08 - INFO - EDA Analysis Initialized Successfully.
+2026-02-01 19:42:08 - INFO - Starting EDA Analysis session using file:../data/processed/ethiopia_fi_unified_data.xlsx 
+2026-02-01 19:42:08 - INFO - EdaAnalysis object initialized successfully.
+2026-02-01 19:42:08 - INFO - Running dataset overview...
+2026-02-01 19:42:09 - ERROR - An error occurred during the EDA process: cannot unpack non-iterable NoneType object
+2026-02-01 19:42:34 - INFO - Dataset loaded successfully from: ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-01 19:42:34 - INFO - EDA Analysis Initialized Successfully.
+2026-02-01 19:42:34 - INFO - Starting EDA Analysis session using file:../data/processed/ethiopia_fi_unified_data.xlsx 
+2026-02-01 19:42:34 - INFO - EdaAnalysis object initialized successfully.
+2026-02-01 19:42:34 - INFO - Running dataset overview...
+2026-02-01 19:42:34 - ERROR - An error occurred during the EDA process: cannot unpack non-iterable NoneType object
+2026-02-01 19:42:54 - INFO - Logging Initialized
+2026-02-01 19:43:08 - INFO - Logging Initialized
+2026-02-01 19:43:36 - INFO - EDA Class Initialized Successfully
+2026-02-01 19:43:36 - INFO - Starting EDA Analysis session using file:../data/processed/ethiopia_fi_unified_data.xlsx 
+2026-02-01 19:43:36 - INFO - EdaAnalysis object initialized successfully.
+2026-02-01 19:43:36 - INFO - Dataset Overview
+2026-02-01 19:43:36 - INFO - Dataset overview generated: Record, Pillar, and Source summaries captured.
+2026-02-01 19:43:37 - INFO - Temporal coverage visualization rendered.
+2026-02-01 19:43:37 - INFO - Account ownership and gender split visualization rendered.
+2026-02-01 19:43:38 - INFO - Growth Table
+2026-02-01 19:43:38 - INFO - [year, value_numeric, growth_pp]
+2026-02-01 19:43:38 - INFO - Growth rates analysis completed and plotted.
+2026-02-01 19:43:38 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-01 19:43:38 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-01 19:43:38 - INFO - Mobile money usage vs. registration gap analysis rendered.
+2026-02-01 19:43:38 - INFO - Event timeline visualization rendered.
+2026-02-01 19:43:39 - INFO - Event impact overlay analysis completed.
+2026-02-01 19:43:40 - INFO - Key correlation matrix calculated.
+2026-02-01 19:43:40 - INFO - Impact link summary generated successfully.
+2026-02-01 19:43:40 - INFO - Full EDA Analysis suite completed successfully.
