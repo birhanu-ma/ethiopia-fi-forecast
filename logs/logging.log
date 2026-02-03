@@ -190,3 +190,22 @@
 2026-02-03 18:03:27 - INFO - Total Records: 28
 2026-02-03 18:03:27 - INFO - Impact links successfully integrated into the pillar analysis.
 2026-02-03 18:03:28 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-03 18:04:07 - INFO - Logging Initialized
+2026-02-03 18:04:21 - INFO - EDA Class Initialized Successfully
+2026-02-03 18:04:21 - INFO - Starting EDA Analysis session using file:../data/processed/ethiopia_fi_unified_data.xlsx 
+2026-02-03 18:04:21 - INFO - EdaAnalysis object initialized successfully.
+2026-02-03 18:04:21 - INFO - Dataset Overview
+2026-02-03 18:04:22 - INFO - Dataset overview generated: Record, Pillar, and Source summaries captured.
+2026-02-03 18:04:23 - INFO - Temporal coverage visualization rendered.
+2026-02-03 18:04:23 - INFO - Account ownership and gender split visualization rendered.
+2026-02-03 18:04:24 - INFO - Growth Table
+2026-02-03 18:04:24 - INFO - [year, value_numeric, growth_pp]
+2026-02-03 18:04:24 - INFO - Growth rates analysis completed and plotted.
+2026-02-03 18:04:24 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-03 18:04:24 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-03 18:04:24 - INFO - Mobile money usage vs. registration gap analysis rendered.
+2026-02-03 18:04:25 - INFO - Event timeline visualization rendered.
+2026-02-03 18:04:25 - INFO - Event impact overlay analysis completed.
+2026-02-03 18:04:26 - INFO - Key correlation matrix calculated.
+2026-02-03 18:04:26 - INFO - Impact link summary generated successfully.
+2026-02-03 18:04:26 - INFO - Full EDA Analysis suite completed successfully.
