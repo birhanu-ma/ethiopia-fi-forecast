@@ -98,3 +98,95 @@
 2026-02-03 14:24:18 - INFO - Key correlation matrix calculated.
 2026-02-03 14:24:18 - INFO - Impact link summary generated successfully.
 2026-02-03 14:24:18 - INFO - Full EDA Analysis suite completed successfully.
+2026-02-03 17:31:58 - INFO - load the orginal dataset
+2026-02-03 17:31:58 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:31:58 - INFO - Adding 15 rows to the dataset (REC_0011 to REC_0036)
+2026-02-03 17:31:58 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:31:58 - INFO - Adding impact links: REC_0034 to EVT_0020 (15 links total)
+2026-02-03 17:31:59 - INFO - Enrichment completed successfully.
+2026-02-03 17:31:59 - INFO - Total Rows After Enrichment: 58
+2026-02-03 17:31:59 - INFO - Iethiopia_fi_unified data enriched successfully aligned to master schema and integrated.
+2026-02-03 17:31:59 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:31:59 - INFO - Adding impact links: IMP_0015 to IMP_0029 (10 links total)
+2026-02-03 17:31:59 - INFO - Enrichment completed successfully.
+2026-02-03 17:31:59 - INFO - Total Records: 24
+2026-02-03 17:31:59 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-03 17:32:25 - INFO - Logging Initialized
+2026-02-03 17:32:26 - INFO - load the orginal dataset
+2026-02-03 17:32:26 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:32:26 - INFO - Adding 15 rows to the dataset (REC_0011 to REC_0036)
+2026-02-03 17:32:26 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:32:26 - INFO - Adding impact links: REC_0034 to EVT_0020 (15 links total)
+2026-02-03 17:32:26 - INFO - Enrichment completed successfully.
+2026-02-03 17:32:26 - INFO - Total Rows After Enrichment: 58
+2026-02-03 17:32:26 - INFO - Iethiopia_fi_unified data enriched successfully aligned to master schema and integrated.
+2026-02-03 17:32:26 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:32:26 - INFO - Adding impact links: IMP_0015 to IMP_0029 (10 links total)
+2026-02-03 17:32:26 - INFO - Enrichment completed successfully.
+2026-02-03 17:32:26 - INFO - Total Records: 24
+2026-02-03 17:32:26 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-03 17:32:27 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-03 17:37:41 - INFO - Logging Initialized
+2026-02-03 17:37:42 - INFO - load the orginal dataset
+2026-02-03 17:37:42 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:37:42 - INFO - Adding 15 rows to the dataset (REC_0011 to REC_0036)
+2026-02-03 17:37:42 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:37:42 - INFO - Adding impact links: REC_0034 to EVT_0020 (15 links total)
+2026-02-03 17:37:42 - INFO - Enrichment completed successfully.
+2026-02-03 17:37:42 - INFO - Total Rows After Enrichment: 58
+2026-02-03 17:37:42 - INFO - Iethiopia_fi_unified data enriched successfully aligned to master schema and integrated.
+2026-02-03 17:37:42 - INFO - DataEnrichment initialized successfully.
+2026-02-03 17:37:42 - INFO - Adding impact links: IMP_0015 to IMP_0029 (13 links total)
+2026-02-03 17:37:42 - INFO - Enrichment completed successfully.
+2026-02-03 17:37:42 - INFO - Total Records: 27
+2026-02-03 17:37:42 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-03 17:37:42 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-03 17:47:26 - INFO - Logging Initialized
+2026-02-03 17:47:31 - INFO - EDA Class Initialized Successfully
+2026-02-03 17:47:31 - INFO - Starting EDA Analysis session using file:../data/processed/ethiopia_fi_unified_data.xlsx 
+2026-02-03 17:47:31 - INFO - EdaAnalysis object initialized successfully.
+2026-02-03 17:47:31 - INFO - Dataset Overview
+2026-02-03 17:47:31 - INFO - Dataset overview generated: Record, Pillar, and Source summaries captured.
+2026-02-03 17:47:32 - INFO - Temporal coverage visualization rendered.
+2026-02-03 17:47:33 - INFO - Account ownership and gender split visualization rendered.
+2026-02-03 17:47:33 - INFO - Growth Table
+2026-02-03 17:47:33 - INFO - [year, value_numeric, growth_pp]
+2026-02-03 17:47:33 - INFO - Growth rates analysis completed and plotted.
+2026-02-03 17:47:33 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-03 17:47:33 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-02-03 17:47:33 - INFO - Mobile money usage vs. registration gap analysis rendered.
+2026-02-03 17:47:33 - INFO - Event timeline visualization rendered.
+2026-02-03 17:47:34 - INFO - Event impact overlay analysis completed.
+2026-02-03 17:47:35 - INFO - Key correlation matrix calculated.
+2026-02-03 17:47:35 - INFO - Impact link summary generated successfully.
+2026-02-03 17:47:35 - INFO - Full EDA Analysis suite completed successfully.
+2026-02-03 18:00:32 - INFO - Logging Initialized
+2026-02-03 18:00:33 - INFO - load the orginal dataset
+2026-02-03 18:00:33 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:00:33 - INFO - Adding 16 rows to the dataset (REC_0011 to REC_0036)
+2026-02-03 18:00:33 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:00:33 - INFO - Adding impact links: REC_0034 to REC_0051 (16 links total)
+2026-02-03 18:00:33 - INFO - Enrichment completed successfully.
+2026-02-03 18:00:33 - INFO - Total Rows After Enrichment: 59
+2026-02-03 18:00:33 - INFO - Iethiopia_fi_unified data enriched successfully aligned to master schema and integrated.
+2026-02-03 18:00:33 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:00:33 - INFO - Adding impact links: IMP_0015 to IMP_0029 (11 links total)
+2026-02-03 18:00:33 - INFO - Enrichment completed successfully.
+2026-02-03 18:00:33 - INFO - Total Records: 24
+2026-02-03 18:00:33 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-03 18:00:34 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
+2026-02-03 18:03:24 - INFO - Logging Initialized
+2026-02-03 18:03:26 - INFO - load the orginal dataset
+2026-02-03 18:03:27 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:03:27 - INFO - Adding 16 rows to the dataset (REC_0011 to REC_0036)
+2026-02-03 18:03:27 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:03:27 - INFO - Adding impact links: REC_0034 to REC_0051 (16 links total)
+2026-02-03 18:03:27 - INFO - Enrichment completed successfully.
+2026-02-03 18:03:27 - INFO - Total Rows After Enrichment: 59
+2026-02-03 18:03:27 - INFO - Iethiopia_fi_unified data enriched successfully aligned to master schema and integrated.
+2026-02-03 18:03:27 - INFO - DataEnrichment initialized successfully.
+2026-02-03 18:03:27 - INFO - Adding impact links: IMP_0015 to IMP_0033 (14 links total)
+2026-02-03 18:03:27 - INFO - Enrichment completed successfully.
+2026-02-03 18:03:27 - INFO - Total Records: 28
+2026-02-03 18:03:27 - INFO - Impact links successfully integrated into the pillar analysis.
+2026-02-03 18:03:28 - INFO - \u2705 Success: Unified file saved at ../data/processed/ethiopia_fi_unified_data.xlsx
