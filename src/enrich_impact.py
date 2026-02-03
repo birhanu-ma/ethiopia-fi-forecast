@@ -3,7 +3,7 @@ import os
 from .logging_config import logging
 
 
-class DataEnrichment:
+class ImpactDataErichment:
     """
     DataEnrichment
 
