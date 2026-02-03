@@ -4,3 +4,5 @@ matplotlib
 seaborn
 openpyxl
 scikit-learn>=1.0.0
+streamlit   
+plotly 
